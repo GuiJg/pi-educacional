@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/home.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <title>Reforço digital - Página inicial</title>
+    <link rel="stylesheet" type="text/css" href="styles/perfil.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Meu perfil</title>
   </head>
   <body>
     <header>
@@ -18,7 +22,7 @@
         <input type="search" placeholder="Pesquisar..." />
       </div>
       <nav class="header-menu">
-        <a href="">Início</a>
+        <a href="home.html">Início</a>
         <a href="">Artigos</a>
         <a href="">Disciplinas</a>
         <a href="">Professores</a>
@@ -46,47 +50,38 @@
         </button>
       </div>
     </header>
-    <section class="container-filters">
-      <div class="filters">
-        <p>Português</p>
-        <p>Matematica</p>
-        <p>História</p>
-        <p>Fisica</p>
-        <p>Quimica</p>
-        <p>Programação</p>
-        <p>Análise de dados</p>
-        <p>UI & UX Design</p>
+
+    <div class="container-profile">
+      <div class="profile">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="5em"
+          height="5em"
+          viewBox="0 0 24 24"
+        >
+          <g fill="black" fill-rule="evenodd" clip-rule="evenodd">
+            <path
+              d="M8.25 9a3.75 3.75 0 1 1 7.5 0a3.75 3.75 0 0 1-7.5 0M12 6.75a2.25 2.25 0 1 0 0 4.5a2.25 2.25 0 0 0 0-4.5"
+            />
+            <path
+              d="M1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12S17.937 22.75 12 22.75S1.25 17.937 1.25 12M12 2.75a9.25 9.25 0 0 0-6.558 15.773c.18-.973.535-1.89 1.246-2.628C7.753 14.791 9.454 14.25 12 14.25s4.247.541 5.311 1.645c.712.738 1.066 1.656 1.247 2.629A9.25 9.25 0 0 0 12 2.75m5.194 16.905c-.102-1.212-.365-2.1-.962-2.719c-.65-.673-1.853-1.186-4.232-1.186s-3.582.513-4.232 1.186c-.597.62-.86 1.507-.962 2.72A9.2 9.2 0 0 0 12 21.25a9.2 9.2 0 0 0 5.194-1.595"
+            />
+          </g>
+        </svg>
+        <h2>Nome do Usuário</h2>
       </div>
-    </section>
-    <section class="container-article">
-      <div class="article">
-        <div class="article-text">
-          <h2>Lorem Ipsum Dolor Sit</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="article-image">
-          <img src="img/livro-aberto-artigo.webp" alt="" />
-        </div>
+      <div class="profile-text">
+        <h2>Sobre mim</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
+          perferendis ad voluptate dicta illum voluptas, ea veritatis voluptatem
+          animi laudantium, repellendus ullam nam dignissimos in atque repellat
+          itaque cupiditate quo. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit.
+        </p>
       </div>
-      <div class="article">
-        <div class="article-text">
-          <h2>Lorem Ipsum Dolor Sit</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="article-image">
-          <img src="img/livro-aberto-artigo.webp" alt="" />
-        </div>
-      </div>
-      <div class="article">
-        <div class="article-text">
-          <h2>Lorem Ipsum Dolor Sit</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="article-image">
-          <img src="img/livro-aberto-artigo.webp" alt="" />
-        </div>
-      </div>
-    </section>
+    </div>
+
     <footer>
       <div class="footer-logo">
         <h1>
