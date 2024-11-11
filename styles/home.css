@@ -1,21 +1,4 @@
-.container-article {
+main {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    margin: 5rem 0;
-    gap: 5rem;
-}
-
-.article {
-    display: flex;
-    margin: 1rem;
-
-    & .article-image{
-        width: 20rem;
-
-        & img{
-            width: 100%;
-        }
-    }
+    padding-top: 15rem;
 }
