@@ -93,7 +93,7 @@ main {
     font-weight: 600;
   }
 
-  p {
+  span {
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
@@ -124,5 +124,129 @@ main {
     &:active {
       transform: scale(0.98);
     }
+  }
+}
+
+.apresentation-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0 2rem 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: -webkit-linear-gradient(250deg, #003366 40%, #0066cc 150%);
+  box-shadow: 3px 3px 10px 1px #00000050;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
+.disciplines-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 6rem;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  a { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 8rem;
+    height: 2.8rem;
+    padding: 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    background: -webkit-linear-gradient(250deg, #003366 20%, #0066cc 100%);
+    box-shadow: 3px 3px 10px 1px #00000050;
+    transition: 0.2s;
+
+    &:hover {
+      background: -webkit-linear-gradient(250deg, #003366 40%, #0066cc 150%);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+.disciplines-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 75%;
+}
+
+.discipline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 28rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: -webkit-linear-gradient(250deg, #003366 40%, #0066cc 150%);
+  box-shadow: 3px 3px 10px 1px #00000050;
+  color: #fff;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.banner-mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #0066cc;
+  width: 100%;
+  height: 10rem;
+  padding: 0.5rem;
+  margin: 6rem 0 6rem 0;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
   }
 }
