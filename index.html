@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <title>Reforço Online - Página inicial</title>
   </head>
   <body>
@@ -185,6 +186,67 @@
           quando e onde você precisar.
         </h2>
       </section>
+
+      <section class="article-section">
+        <div class="title-button">
+          <h2>
+            Artigos
+          </h2>
+          <div class="menu">
+            <button class="arrow" id="prev">
+              <i class="icon fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="arrow" id="next">
+              <i class="icon fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="slider">
+              <div class="square" data-index="1">
+                <a href="/artigos.html" class="article">
+                  <img src="img/portugues.png" alt="">
+                </a>
+              </div>
+              <div class="square" data-index="2">
+                <a href="/artigos.html" class="article">
+                  <img src="img/matematica.png" alt="">
+                </a>
+              </div>
+              <div class="square" data-index="3">
+                <a href="/artigos.html" class="article">
+                  <img src="img/historia.png" alt="">
+                </a>
+              </div>
+              <div class="square" data-index="3">
+                <a href="/artigos.html" class="article">
+                  <img src="img/fisica.png" alt="">
+                </a>
+              </div>
+              <div class="square" data-index="3">
+                <a href="/artigos.html" class="article">
+                  <img src="img/quimica.png" alt="">
+                </a>
+              </div>
+          </div>
+      </div>
+      </section>
+
+      <script>
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+
+        prev.addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + 5) % 5;
+          updateSlider(currentIndex);
+        });
+
+        next.addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % 5;
+          updateSlider(currentIndex);
+        });
+      </script>
+
     </main>
 
     <footer>
