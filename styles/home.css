@@ -174,7 +174,7 @@ main {
     font-weight: 600;
   }
 
-  a { 
+  a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,9 +279,9 @@ main {
 
   .menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 }
 
@@ -322,8 +322,8 @@ main {
   padding: 10px 0;
 }
 
-.content { 
-display: flex;
+.content {
+  display: flex;
   width: 100%;
   height: 100%;
   align-items: center;
@@ -335,13 +335,12 @@ display: flex;
 }
 
 .menu {
-display: flex;
+  display: flex;
   justify-content: center;
+  gap: 5rem;
   margin-top: 20px;
   padding: 10px 0;
-  background: rgb(59 67 117 / 49%);
   border-radius: 30px;
-box-shadow: 0 0 15px rgb(0 0 0 / 8%);
 }
 
 .menu-item {
@@ -360,10 +359,10 @@ box-shadow: 0 0 15px rgb(0 0 0 / 8%);
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgb(125 137 217 / 50%);
   box-shadow: 0 0 15px rgb(0 0 0 / 8%);
   transition: background-color 0.3s ease-in-out;
 }
@@ -376,4 +375,25 @@ box-shadow: 0 0 15px rgb(0 0 0 / 8%);
 .menu-item.active .icon {
   background: rgb(255 255 255 / 68%);
   color: rgb(60 68 119);
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+  border: 0;
+  transition: 0.2s;
+
+  i {
+    display: flex;
+    background: transparent;
+    border: 1px solid #00000034;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }

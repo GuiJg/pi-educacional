@@ -16,17 +16,27 @@ main {
   align-items: center;
   gap: 1rem;
   text-align: center;
+  background-color: #fff;
+  width: 50%;
+  height: 50%;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 10px 1px #00000050;
+
+  i {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
 
   h1 {
     font-size: 3rem;
     font-weight: 800;
-    color: #fff;
+    color: #000;
   }
 
   p {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #fff;
+    color: #000;
   }
 }
 
@@ -34,9 +44,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
-  width: 15rem;
-  height: 2.8rem;
+  width: 17rem;
+  height: 3rem;
   padding: 0.5rem;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
@@ -56,5 +67,10 @@ main {
 
   &:active {
     transform: scale(0.98);
+  }
+
+  i {
+    font-size: 1rem;
+    margin: 0;
   }
 }

@@ -1,61 +1,76 @@
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    height: 100vh;
-    background-color: #0066cc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100vh;
+  background-color: #0066cc;
+}
+
+.developing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  background-color: #fff;
+  width: 50%;
+  height: 50%;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 10px 1px #00000050;
+
+  i {
+    font-size: 5rem;
+    margin-bottom: 1rem;
   }
-  
-  .developing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
-  
-    h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      color: #fff;
-    }
-  
-    p {
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #fff;
-    }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #000;
   }
-  
-  .button-developing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    width: 15rem;
-    height: 2.8rem;
-    padding: 0.5rem;
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
+
+  p {
+    font-size: 1.5rem;
     font-weight: 600;
-    text-align: center;
-    border-radius: 2rem;
-    cursor: pointer;
-    border: 0;
-    color: #fff;
-    background: -webkit-linear-gradient(250deg, #003366 20%, #0066cc 100%);
-    box-shadow: 3px 3px 10px 1px #00000050;
-    transition: 0.2s;
-  
-    &:hover {
-      background: -webkit-linear-gradient(250deg, #003366 40%, #0066cc 150%);
-    }
-  
-    &:active {
-      transform: scale(0.98);
-    }
+    color: #000;
   }
-  
+}
+
+.button-developing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  width: 17rem;
+  height: 3rem;
+  padding: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 0;
+  color: #fff;
+  background: -webkit-linear-gradient(250deg, #003366 20%, #0066cc 100%);
+  box-shadow: 3px 3px 10px 1px #00000050;
+  transition: 0.2s;
+
+  &:hover {
+    background: -webkit-linear-gradient(250deg, #003366 40%, #0066cc 150%);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  i {
+    font-size: 1rem;
+    margin: 0;
+  }
+}

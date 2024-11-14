@@ -57,3 +57,4 @@ hammer.on('swiperight', () => {
 });
 
 updateSlider(currentIndex);
+

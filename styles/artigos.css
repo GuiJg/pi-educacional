@@ -1,3 +1,7 @@
+body {
+  background-color: #003366 !important;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -14,8 +18,8 @@ main {
   align-items: start;
   gap: 1rem;
   padding: 20rem 3rem 3rem 3rem;
-  margin: 13rem 1rem 1rem 1rem;
-  background-image: url("https://img.freepik.com/free-photo/3d-rendering-blue-pen-with-paper_23-2150851408.jpg?t=st=1731290604~exp=1731294204~hmac=6114513fcc0f0564a819aa71b31331eea7e665c042c7f1e4e41554562a87101d&w=1380");
+  margin: 0 1rem 1rem 1rem;
+  background-image: url(/img/banner-article.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
